@@ -1,0 +1,10 @@
+{
+    "port": "3500",
+    "twitter_conf": {
+      "count": "50",
+      "consumer_key": "99lXxr3X5noRSuGAeu5ysuk0K",
+      "consumer_secret": "EGC8bGK362F492ouHN82JuOJjQcJK1sGoB7TIuWXt2jbwJchUw",
+      "access_token_key": "99054881-KCZilQZu19rKBYbzIYDMGKFMjuiYvTkXcpzbxyv5F",
+      "access_token_secret": "Pmt7Wb2c8a2gPUMA1qfFdf7QF6ZRX8lJ0mcRvIRhJsh8T"
+    }
+}

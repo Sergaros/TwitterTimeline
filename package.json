@@ -1,0 +1,31 @@
+{
+  "name": "tweetstimeline",
+  "version": "1.0.0",
+  "description": "App that displays Embedded Twitter Timeline for given user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV='test' NODE_PATH='.;libs/.' mocha --harmony -u bdd -R spec -t 500 --recursive --watch",
+    "start": "cross-env NODE_ENV='production' NODE_PATH='.:libs/.' node --harmony index.js"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Sergej <sergej.tertychnij@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.25.1",
+    "koa": "^2.1.0",
+    "koa-bodyparser": "^4.1.0",
+    "koa-favicon": "^2.0.0",
+    "koa-logger": "^2.0.1",
+    "koa-router": "^7.0.1",
+    "koa-static": "^3.0.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "mocha": "^3.4.2",
+    "supertest": "^3.0.0",
+    "supertest-koa-agent": "^0.3.0"
+  }
+}

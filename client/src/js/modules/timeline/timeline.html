@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <form class="col-sm-3">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Enter twitter user"
+        ng-model="$ctrl.username"
+        ng-change="$ctrl.error=false">
+        <div class="input-group-btn">
+          <button class="btn btn-primary"
+            type="submit"
+            ng-disabled="!$ctrl.username"
+            ng-click="$ctrl.getTimeline()">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</br>
+<div ng-show="$ctrl.error" class="alert alert-danger">
+  <strong>Error!</strong> Username wrong or not exist!
+</div>
+
+  <div class="row">
+    <div class="col-sm-offset-3 col-sm-6" ng-repeat="id in $ctrl.data" ng-cloak>
+      <twitter-widget twitter-widget-id="id">
+      </twitter-widget>
+    </div>
+  </div>
+
+</div>
