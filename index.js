@@ -19,7 +19,8 @@ app.listen(config.get('port'));
 
 if(require.main === module){
     // application run directly; start app server
-    app.listen(config.get('port'));
+    let port = process.env.PORT || config.get('port');
+    app.listen(port);
 } else {
     // application imported as a module via "require": export function to create server
     module.exports = app;
