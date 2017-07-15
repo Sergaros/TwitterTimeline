@@ -1,0 +1,16 @@
+Before run this app please install all dependencies:
+  npm install
+  bower install
+
+For Linux:
+  run: npm start
+  test: npm test
+
+For windows:
+  Please install cross-env npm package like: npm i -g cross-env and change in package.json
+  script.start and script.test like this:
+    "test": "cross-env NODE_ENV='test' NODE_PATH='.;libs/.' mocha --harmony -u bdd -R spec -t 500 --recursive --watch",
+    "start": "cross-env NODE_ENV='production' NODE_PATH='.:libs/.' node --harmony index.js",
+  After this you can use it:
+    run: npm start
+    test: npm test
