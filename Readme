@@ -1,3 +1,5 @@
+TweetsTimeline
+App that displays Embedded Twitter Timeline for given user.
 Before run this app please install all dependencies:
   npm install
   bower install
