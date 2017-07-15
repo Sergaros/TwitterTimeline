@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV='test' NODE_PATH='.;libs/.' mocha --harmony -u bdd -R spec -t 500 --recursive --watch",
-    "start": "NODE_ENV='production' NODE_PATH='.:libs/.' node --harmony index.js"
+    "start": "NODE_ENV='production' NODE_PATH='.:libs/.' node --harmony index.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "keywords": [
     "twitter"
@@ -16,6 +17,7 @@
   "author": "Sergej <sergej.tertychnij@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bower": "^1.8.0",
     "config": "^1.25.1",
     "koa": "^2.1.0",
     "koa-bodyparser": "^4.1.0",
