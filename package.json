@@ -7,9 +7,8 @@
   "description": "App that displays Embedded Twitter Timeline for given user.",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV='test' NODE_PATH='.;libs/.' mocha --harmony -u bdd -R spec -t 500 --recursive --watch",
-    "start": "NODE_ENV='production' NODE_PATH='.:libs/.' node --harmony index.js",
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "test": "cross-env NODE_ENV='test' NODE_PATH='.;libs/.' mocha --harmony -u bdd -R spec -t 500 --recursive --watch",
+    "start": "cross-env NODE_ENV='production' NODE_PATH='.:libs/.' node --harmony index.js"
   },
   "keywords": [
     "twitter"

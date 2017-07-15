@@ -23,7 +23,5 @@ module.exports = (username)=>{
     });
 
     return results;
-
-    //console.log('User timeline result - ', tweets);
   });
 };
